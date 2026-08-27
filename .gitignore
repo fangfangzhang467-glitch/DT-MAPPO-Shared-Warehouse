@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.log
+.venv/
+venv/
+.DS_Store
+data/generated_*.csv
+data/results_*.csv
+data/*.jsonl
