@@ -1,0 +1,7 @@
+tenant_id,tenant_name,demand_volatility,avg_turnover_days,inventory_share_pct,product_profile
+0,Tenant A,Low,18,14,General goods
+1,Tenant B,Medium,12,19,Temperature-insensitive
+2,Tenant C,High,7,26,Fast-moving consumer goods
+3,Tenant D,Medium,10,17,Fragile items
+4,Tenant E,High,6,16,Promotional goods
+5,Tenant F,Low,21,8,Bulk inventory

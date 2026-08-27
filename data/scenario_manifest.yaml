@@ -1,0 +1,43 @@
+scenarios:
+  normal:
+    demand_multiplier: 1.0
+    blocked_aisle_fraction: 0.0
+    observation_delay_steps: 0
+    sensor_noise_std: 0.0
+  demand_shock:
+    demand_multiplier: 1.75
+    blocked_aisle_fraction: 0.0
+    observation_delay_steps: 0
+    sensor_noise_std: 0.0
+  severe_demand_shock:
+    demand_multiplier: 2.25
+    blocked_aisle_fraction: 0.0
+    observation_delay_steps: 0
+    sensor_noise_std: 0.0
+  layout_perturbation:
+    demand_multiplier: 1.0
+    blocked_aisle_fraction: 0.15
+    observation_delay_steps: 0
+    sensor_noise_std: 0.0
+  delayed_twin:
+    demand_multiplier: 1.0
+    blocked_aisle_fraction: 0.0
+    observation_delay_steps: 2
+    sensor_noise_std: 0.03
+ablations:
+  full_model:
+    dynamic_twin: true
+    multi_agent: true
+    fairness_reward: true
+  without_dynamic_twin:
+    dynamic_twin: false
+    multi_agent: true
+    fairness_reward: true
+  without_marl:
+    dynamic_twin: true
+    multi_agent: false
+    fairness_reward: true
+  without_fairness_reward:
+    dynamic_twin: true
+    multi_agent: true
+    fairness_reward: false
